@@ -1,0 +1,39 @@
+4176 timestamp
+4176 state_name
+4176 state_code
+4176 public_notes
+4176 project_name
+4176 project_id
+4176 itemcount
+4176 imagecount
+4176 city
+4176 call_number
+4176 borough_name
+4176 borough_code
+4176 all_text
+ 417 items_t
+ 417 items
+  47 owneragents_t
+  47 owneragents
+  20 addresses_t
+  20 addresses
+   3 neighborhoods_t
+   3 neighborhoods
+   3 architects_t
+   3 architects
+   1 wt
+   1 version
+   1 status
+   1 start
+   1 rows
+   1 responseHeader
+   1 response
+   1 qt
+   1 q
+   1 params
+   1 indent
+   1 hl.fl
+   1 fq
+   1 fl
+   1 explainOther
+   1 QTime

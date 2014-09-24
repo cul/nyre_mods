@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:mods="http://www.loc.gov/mods/v3"
+           xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+   <mods:identifier type="local"/>
+   <mods:titleInfo>
+      <mods:title/>
+   </mods:titleInfo>
+   <mods:physicalDescription>
+      <mods:form authority="aat"/>
+      <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
+   </mods:physicalDescription>
+   <mods:originInfo>
+      <mods:dateOther/>
+   </mods:originInfo>
+   <mods:language>
+      <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
+   </mods:language>
+   <mods:subject authority="lcsh">
+      <mods:topic>Buildings</mods:topic>
+   </mods:subject>
+   <mods:typeOfResource>still image</mods:typeOfResource>
+   <mods:location>
+      <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia University</mods:physicalLocation>
+      <mods:physicalLocation authority="marcorg">NNC-A</mods:physicalLocation>
+      <mods:url access="object in context">https://biggert.cul.columbia.edu/items/view/</mods:url>
+      <mods:holdingSimple>
+         <mods:copyInformation>
+            <mods:subLocation>Avery Classics Collection</mods:subLocation>
+         </mods:copyInformation>
+      </mods:holdingSimple>
+   </mods:location>
+   <mods:relatedItem type="host" displayLabel="Project">
+      <mods:titleInfo>
+         <mods:title>Biggert collection of architectural vignettes on commercial stationery</mods:title>
+      </mods:titleInfo>
+      <mods:location>
+         <mods:url>http://www.columbia.edu/cgi-bin/cul/resolve?clio7887951</mods:url>
+      </mods:location>
+   </mods:relatedItem>
+   <mods:recordInfo>
+      <mods:recordIdentifier>ldpd_</mods:recordIdentifier>
+      <mods:recordCreationDate>2014-09-23T16:13:05.97-04:00</mods:recordCreationDate>
+      <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
+      <mods:recordOrigin>Created and edited in general conformance to MODS Guideline (Version 3).</mods:recordOrigin>
+   </mods:recordInfo>
+</mods:mods>
