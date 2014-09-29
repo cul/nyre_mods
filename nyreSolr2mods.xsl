@@ -75,6 +75,7 @@
                 </mods:language>
                 <xsl:apply-templates
                     select="ancestor::doc/str[@name = 'state_name'] | ancestor::doc/str[@name = 'city_name'] | ancestor::doc/str[@name = 'borough_name']"/>
+                <xsl:apply-templates select="ancestor::doc/arr[@name = 'neighborhoods']/str[text()]"/>
                 <mods:subject authority="lcsh">
                     <mods:topic>Buildings</mods:topic>
                 </mods:subject>
@@ -143,6 +144,13 @@
     <xsl:template match="doc/str[@name = 'project_name']">
         <xsl:text>&#160;</xsl:text>
         <xsl:value-of select="."/>
+    </xsl:template>
+    <xsl:template match="arr[@name = 'neighborhoods']/str">
+        <mods:subject>
+            <mods:geographic>
+                <xsl:value-of select="normalize-space(.)"/>
+            </mods:geographic>
+        </mods:subject>
     </xsl:template>
 
 </xsl:stylesheet>
