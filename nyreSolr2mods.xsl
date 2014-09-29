@@ -53,10 +53,14 @@
                 <xsl:apply-templates select="ancestor::doc/arr[@name = 'owneragents']/str"/>
                 <mods:titleInfo>
                     <mods:title>
-                        <xsl:value-of select="ancestor::doc/str[@name = 'project_name']/text()"/>
-                        <xsl:value-of
+                        <xsl:value-of 
+                            select="ancestor::doc/arr[@name = 'addresses']/str[1]"
+                        />
+                        <xsl:apply-templates select="ancestor::doc/str[@name = 'project_name'][text()]"/>
+                      <!--  <xsl:value-of
                             select="ancestor::doc/arr[@name = 'addresses'][following-sibling::str[@name = 'project_name'][not(text())]][1]"
                         />
+                        -->
                     </mods:title>
                 </mods:titleInfo>
                 <mods:titleInfo type="alternative">
@@ -139,6 +143,10 @@
                 <xsl:value-of select="."/>
             </mods:namePart>
         </mods:name>
+    </xsl:template>
+    <xsl:template match="doc/str[@name = 'project_name']">
+        <xsl:text>&#160;</xsl:text>
+        <xsl:value-of select="."/>
     </xsl:template>
 
 </xsl:stylesheet>

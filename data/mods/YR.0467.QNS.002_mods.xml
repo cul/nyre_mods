@@ -14,9 +14,7 @@
       <mods:namePart/>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>105-07 66 Rd.105-33 66 Ave.105-30 66 Ave.
-	105-21 66 Ave.105-20 66 Ave.105-07 66 Ave.105-10 65 Rd.
-	105-09 65 Rd.105-34 65 Ave.105-28 65 Ave.105-10 65 Ave.</mods:title>
+      <mods:title>105-07 66 Rd.</mods:title>
    </mods:titleInfo>
    <mods:titleInfo type="alternative">
       <mods:title>Type B</mods:title>
@@ -59,7 +57,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-09-29T12:49:04.364-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-09-29T14:59:14.453-04:00</mods:recordCreationDate>
       <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
       <mods:recordOrigin>Created and edited in general conformance to MODS Guideline
                         (Version 3).</mods:recordOrigin>

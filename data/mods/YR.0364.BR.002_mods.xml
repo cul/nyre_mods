@@ -30,7 +30,7 @@
       <mods:namePart>Cross Properties, Inc.</mods:namePart>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>Wall St.+5</mods:title>
+      <mods:title>111 Livingston St. Wall St.+5</mods:title>
    </mods:titleInfo>
    <mods:titleInfo type="alternative">
       <mods:title>111 Livingston St.: 14th thru 23rd floor plan</mods:title>
@@ -73,7 +73,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-09-29T12:49:04.364-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-09-29T14:59:14.453-04:00</mods:recordCreationDate>
       <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
       <mods:recordOrigin>Created and edited in general conformance to MODS Guideline
                         (Version 3).</mods:recordOrigin>

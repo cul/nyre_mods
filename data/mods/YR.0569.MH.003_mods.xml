@@ -17,7 +17,7 @@
       <mods:namePart>Herbert Charles and Co., Inc.</mods:namePart>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>52 E. 86 St.35 E. 85 St.</mods:title>
+      <mods:title>52 E. 86 St.</mods:title>
    </mods:titleInfo>
    <mods:titleInfo type="alternative">
       <mods:title>Typical floor plan: 2nd thru 11th floor</mods:title>
@@ -60,7 +60,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-09-29T12:49:04.364-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-09-29T14:59:14.453-04:00</mods:recordCreationDate>
       <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
       <mods:recordOrigin>Created and edited in general conformance to MODS Guideline
                         (Version 3).</mods:recordOrigin>

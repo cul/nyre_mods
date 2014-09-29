@@ -23,7 +23,7 @@
       <mods:namePart>White and White</mods:namePart>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>Broadmoor - The Berkshire, The Bedford, The Cambridge, The Chester, The Cornwall, The Durham, The Devon, The Dorset, The Kent, The Monmouth, The Norfolk, The Oxford, The Rutland, The Stafford, The Somerset, The Sussex, The Wiltshire, The Warwick, The York</mods:title>
+      <mods:title>Northern Blvd. and 90 St. Broadmoor - The Berkshire, The Bedford, The Cambridge, The Chester, The Cornwall, The Durham, The Devon, The Dorset, The Kent, The Monmouth, The Norfolk, The Oxford, The Rutland, The Stafford, The Somerset, The Sussex, The Wiltshire, The Warwick, The York</mods:title>
    </mods:titleInfo>
    <mods:titleInfo type="alternative">
       <mods:title>Broadmoor</mods:title>
@@ -66,7 +66,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-09-29T12:49:04.364-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-09-29T14:59:14.453-04:00</mods:recordCreationDate>
       <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
       <mods:recordOrigin>Created and edited in general conformance to MODS Guideline
                         (Version 3).</mods:recordOrigin>
