@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:mods="http://www.loc.gov/mods/v3"
+           xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+   <mods:identifier type="local">YR.0559.MH.001</mods:identifier>
+   <mods:titleInfo type="alternative">
+      <mods:title>1st floor</mods:title>
+   </mods:titleInfo>
+   <mods:recordInfo>
+      <mods:recordIdentifier>ldpd_YR.0559.MH.001</mods:recordIdentifier>
+      <mods:recordCreationDate>2014-09-29T16:07:27.037-04:00</mods:recordCreationDate>
+      <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
+      <mods:recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3).</mods:recordOrigin>
+   </mods:recordInfo>
+</mods:mods>
