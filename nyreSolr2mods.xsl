@@ -35,32 +35,22 @@
             </xsl:for-each>
         </xsl:message>
         -->
-        <xsl:apply-templates select="arr[@name = 'items']/str">
-            <xsl:with-param name="item_id" select="$item_id"/>
-        </xsl:apply-templates>
-    </xsl:template>
-    <xsl:template match="arr[@name = 'items']/str">
-        <xsl:param name="item_id"/>
-        <xsl:variable name="asset_id" select="concat($item_id, '.',format-number(position(), '000'))"/>
         <xsl:result-document
-            href="data/mods/{$asset_id}_mods.xml">
+            href="data/mods/{$item_id}_mods.xml">
             <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
                 <mods:identifier type="local">
-                    <xsl:value-of select="$asset_id"/>
+                    <xsl:value-of select="$item_id"/>
                 </mods:identifier>
-                <xsl:apply-templates select="ancestor::doc/arr[@name = 'architects']/str[text()]"/>
-                <xsl:apply-templates select="ancestor::doc/arr[@name = 'owneragents']/str[text()]"/>
+                <xsl:apply-templates select="arr[@name = 'architects']/str[text()]"/>
+                <xsl:apply-templates select="arr[@name = 'owneragents']/str[text()]"/>
                 <mods:titleInfo>
                     <mods:title>
                         <xsl:value-of 
-                            select="ancestor::doc/arr[@name = 'addresses']/str[1]"
+                            select="arr[@name = 'addresses']/str[1]"
                         />
-                        <xsl:apply-templates select="ancestor::doc/str[@name = 'project_name'][text()]"/>
+                        <xsl:apply-templates select="str[@name = 'project_name'][text()]"/>
                     </mods:title>
-                </mods:titleInfo>
-                <mods:titleInfo type="alternative">
-                    <mods:title><xsl:value-of select="."/></mods:title>
                 </mods:titleInfo>
                 <mods:physicalDescription>
                     <!--                    
@@ -74,8 +64,8 @@
                     <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
                 </mods:language>
                 <xsl:apply-templates
-                    select="ancestor::doc/str[@name = 'state_name'] | ancestor::doc/str[@name = 'city_name'] | ancestor::doc/str[@name = 'borough_name']"/>
-                <xsl:apply-templates select="ancestor::doc/arr[@name = 'neighborhoods']/str[text()]"/>
+                    select="str[@name = 'state_name'] | str[@name = 'city_name'] | str[@name = 'borough_name']"/>
+                <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
                 <mods:subject authority="lcsh">
                     <mods:topic>Buildings</mods:topic>
                 </mods:subject>
@@ -85,7 +75,7 @@
                     <mods:physicalLocation authority="marcorg">NNC-A</mods:physicalLocation>
                     <mods:url access="object in context">
                         <xsl:text>https://nyre.cul.columbia.edu/items/view/</xsl:text>
-                        <xsl:value-of select="ancestor::doc/str[@name = 'project_id']"/>
+                        <xsl:value-of select="str[@name = 'project_id']"/>
                     </mods:url>
                     <mods:holdingSimple>
                         <mods:copyInformation>
@@ -101,6 +91,37 @@
                         <mods:url>http://www.columbia.edu/cgi-bin/cul/resolve?clio7363386</mods:url>
                     </mods:location>
                 </mods:relatedItem>
+                <mods:recordInfo>
+                    <mods:recordIdentifier>
+                        <xsl:text>ldpd_</xsl:text>
+                        <xsl:value-of select="$item_id"/>
+                    </mods:recordIdentifier>
+                    <mods:recordCreationDate>
+                        <xsl:value-of select="current-dateTime()"/>
+                    </mods:recordCreationDate>
+                    <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
+                    <mods:recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3).</mods:recordOrigin>
+                </mods:recordInfo>
+            </mods:mods>
+        </xsl:result-document>
+        <xsl:apply-templates select="arr[@name = 'items']/str">
+            <xsl:with-param name="item_id" select="$item_id"/>
+        </xsl:apply-templates>
+    </xsl:template>
+    <xsl:template match="arr[@name = 'items']/str">
+        <xsl:param name="item_id"/>
+        <xsl:variable name="asset_id" select="concat($item_id, '.',format-number(position(), '000'))"/>
+        <xsl:result-document
+            href="data/mods/{$asset_id}_mods.xml">
+            <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+                <mods:identifier type="local">
+                    <xsl:value-of select="$asset_id"/>
+                </mods:identifier>
+               
+                <mods:titleInfo type="alternative">
+                    <mods:title><xsl:value-of select="."/></mods:title>
+                </mods:titleInfo>
                 <mods:recordInfo>
                     <mods:recordIdentifier>
                         <xsl:text>ldpd_</xsl:text>
