@@ -10,9 +10,6 @@
          <mods:roleTerm type="text" authority="marcrelator">Architect</mods:roleTerm>
       </mods:role>
    </mods:name>
-   <mods:name>
-      <mods:namePart/>
-   </mods:name>
    <mods:titleInfo>
       <mods:title>119 W. 40 St.</mods:title>
    </mods:titleInfo>
@@ -20,7 +17,6 @@
       <mods:title>119 West 40th Street: a 22 story office building</mods:title>
    </mods:titleInfo>
    <mods:physicalDescription>
-      <mods:form authority="aat">XXXXXXXXXX</mods:form>
       <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
    </mods:physicalDescription>
    <mods:language>
@@ -37,8 +33,7 @@
    </mods:subject>
    <mods:typeOfResource>still image</mods:typeOfResource>
    <mods:location>
-      <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia
-                        University</mods:physicalLocation>
+      <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia University</mods:physicalLocation>
       <mods:physicalLocation authority="marcorg">NNC-A</mods:physicalLocation>
       <mods:url access="object in context">https://nyre.cul.columbia.edu/items/view/16519</mods:url>
       <mods:holdingSimple>
@@ -56,10 +51,9 @@
       </mods:location>
    </mods:relatedItem>
    <mods:recordInfo>
-      <mods:recordIdentifier>ldpd_</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-09-29T14:59:14.453-04:00</mods:recordCreationDate>
+      <mods:recordIdentifier>ldpd_YR.0137.MH.001</mods:recordIdentifier>
+      <mods:recordCreationDate>2014-09-29T15:12:02.92-04:00</mods:recordCreationDate>
       <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
-      <mods:recordOrigin>Created and edited in general conformance to MODS Guideline
-                        (Version 3).</mods:recordOrigin>
+      <mods:recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3).</mods:recordOrigin>
    </mods:recordInfo>
 </mods:mods>

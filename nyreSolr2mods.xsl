@@ -41,35 +41,33 @@
     </xsl:template>
     <xsl:template match="arr[@name = 'items']/str">
         <xsl:param name="item_id"/>
-        <xsl:message select="concat($item_id, '.',format-number(position(), '000'))"></xsl:message>
+        <xsl:variable name="asset_id" select="concat($item_id, '.',format-number(position(), '000'))"/>
         <xsl:result-document
-            href="data/mods/{$item_id}.{format-number(position(), '000')}_mods.xml">
+            href="data/mods/{$asset_id}_mods.xml">
             <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
                 <mods:identifier type="local">
-                    <xsl:value-of select="concat($item_id, '.',format-number(position(), '000'))"/>
+                    <xsl:value-of select="$asset_id"/>
                 </mods:identifier>
-                <xsl:apply-templates select="ancestor::doc/arr[@name = 'architects']/str"/>
-                <xsl:apply-templates select="ancestor::doc/arr[@name = 'owneragents']/str"/>
+                <xsl:apply-templates select="ancestor::doc/arr[@name = 'architects']/str[text()]"/>
+                <xsl:apply-templates select="ancestor::doc/arr[@name = 'owneragents']/str[text()]"/>
                 <mods:titleInfo>
                     <mods:title>
                         <xsl:value-of 
                             select="ancestor::doc/arr[@name = 'addresses']/str[1]"
                         />
                         <xsl:apply-templates select="ancestor::doc/str[@name = 'project_name'][text()]"/>
-                      <!--  <xsl:value-of
-                            select="ancestor::doc/arr[@name = 'addresses'][following-sibling::str[@name = 'project_name'][not(text())]][1]"
-                        />
-                        -->
                     </mods:title>
                 </mods:titleInfo>
                 <mods:titleInfo type="alternative">
                     <mods:title><xsl:value-of select="."/></mods:title>
                 </mods:titleInfo>
                 <mods:physicalDescription>
-                    <mods:form authority="aat">
+                    <!--                    
+                        <mods:form authority="aat">
                         <xsl:text>XXXXXXXXXX</xsl:text>
                     </mods:form>
+                    -->
                     <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
                 </mods:physicalDescription>
                 <mods:language>
@@ -82,8 +80,7 @@
                 </mods:subject>
                 <mods:typeOfResource>still image</mods:typeOfResource>
                 <mods:location>
-                    <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia
-                        University</mods:physicalLocation>
+                    <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia University</mods:physicalLocation>
                     <mods:physicalLocation authority="marcorg">NNC-A</mods:physicalLocation>
                     <mods:url access="object in context">
                         <xsl:text>https://nyre.cul.columbia.edu/items/view/</xsl:text>
@@ -106,14 +103,13 @@
                 <mods:recordInfo>
                     <mods:recordIdentifier>
                         <xsl:text>ldpd_</xsl:text>
-                        <xsl:value-of select="access_id"/>
+                        <xsl:value-of select="$asset_id"/>
                     </mods:recordIdentifier>
                     <mods:recordCreationDate>
                         <xsl:value-of select="current-dateTime()"/>
                     </mods:recordCreationDate>
                     <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
-                    <mods:recordOrigin>Created and edited in general conformance to MODS Guideline
-                        (Version 3).</mods:recordOrigin>
+                    <mods:recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3).</mods:recordOrigin>
                 </mods:recordInfo>
             </mods:mods>
         </xsl:result-document>
