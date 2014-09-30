@@ -74,7 +74,7 @@
                     <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia University</mods:physicalLocation>
                     <mods:physicalLocation authority="marcorg">NNC-A</mods:physicalLocation>
                     <mods:url access="object in context">
-                        <xsl:text>https://nyre.cul.columbia.edu/items/view/</xsl:text>
+                        <xsl:text>http://nyre.cul.columbia.edu/items/view/</xsl:text>
                         <xsl:value-of select="str[@name = 'project_id']"/>
                     </mods:url>
                     <mods:holdingSimple>
