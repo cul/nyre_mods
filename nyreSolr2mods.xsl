@@ -152,7 +152,7 @@
             </mods:namePart>
             <mods:role>
                 <mods:roleTerm type="code" authority="marcrelator">arc</mods:roleTerm>
-                <mods:roleTerm type="text" authority="marcrelator">Architect</mods:roleTerm>
+                <mods:roleTerm type="text" authority="marcrelator">architect</mods:roleTerm>
             </mods:role>
         </mods:name>
     </xsl:template>
