@@ -114,6 +114,9 @@
                     <mods:recordCreationDate>
                         <xsl:value-of select="current-dateTime()"/>
                     </mods:recordCreationDate>
+                    <mods:languageOfCataloging>
+                        <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
+                    </mods:languageOfCataloging>
                     <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
                     <mods:recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3).</mods:recordOrigin>
                 </mods:recordInfo>
