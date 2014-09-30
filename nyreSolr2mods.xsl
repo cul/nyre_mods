@@ -56,9 +56,14 @@
                     <mods:form authority="aat" valueURI="http://vocab.getty.edu/aat/300264821">printed ephemera</mods:form>
                     <mods:form authority="marcform">electronic</mods:form>
                     <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
-                    <xsl:apply-templates select="str[@name = 'itemcount'][text() = '1']"/>
-                    <xsl:apply-templates select="str[@name = 'itemcount'][text() != '1']"/>
+                    <xsl:apply-templates select="str[@name = 'itemcount']"/>
                 </mods:physicalDescription>
+                <mods:originInfo>
+                    <mods:dateIssued>between 1920 and 1979</mods:dateIssued>
+                    <mods:dateIssued keydate="yes" point="start" encoding="w3cdtf" qualifier="inferred">1920</mods:dateIssued>
+                    <mods:dateIssued point="end" encoding="w3cdtf">1979</mods:dateIssued>
+                </mods:originInfo>
+                <mods:note><xsl:text>Date based on the earliest and latest date of the New York Real Estate Brochure Collection.</xsl:text></mods:note>
                 <mods:language>
                     <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
                 </mods:language>
@@ -188,5 +193,4 @@
     <xsl:template match="str[@name = 'itemcount']">
         <mods:extent><xsl:value-of select="."/><xsl:text> item</xsl:text><xsl:if test=". != '1'"><xsl:text>s</xsl:text></xsl:if></mods:extent>
     </xsl:template>
-
 </xsl:stylesheet>
