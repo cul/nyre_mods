@@ -56,6 +56,8 @@
                     <mods:form authority="aat" valueURI="http://vocab.getty.edu/aat/300264821">printed ephemera</mods:form>
                     <mods:form authority="marcform">electronic</mods:form>
                     <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
+                    <xsl:apply-templates select="str[@name = 'itemcount'][text() = '1']"/>
+                    <xsl:apply-templates select="str[@name = 'itemcount'][text() != '1']"/>
                 </mods:physicalDescription>
                 <mods:language>
                     <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
@@ -182,6 +184,9 @@
     </xsl:template>
     <xsl:template match="str[@name = 'public_notes']">
         <mods:note><xsl:value-of select="."/></mods:note>
+    </xsl:template>
+    <xsl:template match="str[@name = 'itemcount']">
+        <mods:extent><xsl:value-of select="."/><xsl:text> item</xsl:text><xsl:if test=". != '1'"><xsl:text>s</xsl:text></xsl:if></mods:extent>
     </xsl:template>
 
 </xsl:stylesheet>
