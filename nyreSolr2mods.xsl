@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mods="http://www.loc.gov/mods/v3"
+    xmlns:functx="http://www.functx.com"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" exclude-result-prefixes="xs xd" version="2.0">
     <xd:doc scope="stylesheet">
         <xd:desc>
@@ -69,12 +70,26 @@
                 </mods:language>
                 <xsl:apply-templates select="str[@name = 'public_notes']"/>
                 <xsl:apply-templates select="str[@name = 'project_name'][text()]" mode="subject"/>
-                <xsl:apply-templates
-                    select="str[@name = 'state_name'] | str[@name = 'city_name'] | str[@name = 'borough_name']"/>
-                <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
                 <mods:subject authority="lcsh">
                     <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
                 </mods:subject>
+                <mods:subject authority="lcsh">
+                    <mods:hierarchicalGeographic><mods:country>United States</mods:country></mods:hierarchicalGeographic>
+                </mods:subject>
+<!--                <xsl:apply-templates
+                    select="str[@name = 'state_name'][contains(text(), 'York')]" mode="ny"/>
+                <xsl:apply-templates
+                    select="str[@name = 'state_name'][not(contains(text(), 'York'))]"/>
+                <xsl:apply-templates
+                    select="str[@name = 'borough_name'][functx:contains-any-of('.',('Long Island','Westchester'))]"/>
+-->
+<xsl:apply-templates
+    select="str[@name = 'city'][functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="ny"/>
+                <xsl:apply-templates
+                    select="str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]"/>
+<!--                <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
+                <xsl:apply-templates select="arr[@name = 'addresses']/str"/>
+-->
                 <mods:typeOfResource>still image</mods:typeOfResource>
                 <mods:location>
                     <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia University</mods:physicalLocation>
@@ -157,12 +172,41 @@
             </mods:mods>
         </xsl:result-document>
     </xsl:template>
-    <xsl:template
-        match="str[@name = 'state_name'] | str[@name = 'city_name'] | str[@name = 'borough_name']">
+<!--    <xsl:template
+        match="str[@name = 'state_name']" mode="ny">
         <mods:subject>
-            <mods:geographic>
-                <xsl:value-of select="normalize-space(.)"/>
-            </mods:geographic>
+            <mods:hierarchicalGeographic>
+                <mods:state><xsl:value-of select="normalize-space(.)"/><xsl:text> (State)</xsl:text></mods:state>
+            </mods:hierarchicalGeographic>
+        </mods:subject>
+    </xsl:template>
+    <xsl:template
+        match="str[@name = 'state_name']">
+        <mods:subject>
+            <mods:hierarchicalGeographic>
+                <mods:state><xsl:value-of select="normalize-space(.)"/></mods:state>
+            </mods:hierarchicalGeographic>
+        </mods:subject>
+    </xsl:template>
+    <xsl:template
+        match="str[@name = 'borough_name']">
+        <mods:subject>
+            <mods:hierarchicalGeographic>
+                <mods:county><xsl:value-of select="normalize-space(.)"/></mods:county>
+            </mods:hierarchicalGeographic>
+        </mods:subject>
+    </xsl:template>
+    -->
+    <xsl:template
+        match="str[@name = 'city']" mode="ny">
+        <mods:subject>
+            <mods:geographic><xsl:text>New York</xsl:text></mods:geographic>
+        </mods:subject>
+    </xsl:template>
+    <xsl:template
+        match="str[@name = 'city']">
+        <mods:subject>
+            <mods:geographic><xsl:value-of select="normalize-space(.)"/></mods:geographic>
         </mods:subject>
     </xsl:template>
     <xsl:template match="arr[@name = 'architects']/str">
@@ -208,4 +252,16 @@
     <xsl:template match="str[@name = 'itemcount']">
         <mods:extent><xsl:value-of select="."/><xsl:text> item</xsl:text><xsl:if test=". != '1'"><xsl:text>s</xsl:text></xsl:if></mods:extent>
     </xsl:template>
+    
+    <xsl:function name="functx:contains-any-of" as="xs:boolean">
+        <xsl:param name="arg" as="xs:string?"/>
+        <xsl:param name="searchStrings" as="xs:string*"/>
+        
+        <xsl:sequence select="
+            some $searchString in $searchStrings
+            satisfies contains($arg,$searchString)
+            "/>
+        
+    </xsl:function>
+    
 </xsl:stylesheet>
