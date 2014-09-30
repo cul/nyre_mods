@@ -60,7 +60,7 @@
                 </mods:physicalDescription>
                 <mods:originInfo>
                     <mods:dateIssued>between 1920 and 1979</mods:dateIssued>
-                    <mods:dateIssued keydate="yes" point="start" encoding="w3cdtf" qualifier="inferred">1920</mods:dateIssued>
+                    <mods:dateIssued keyDate="yes" point="start" encoding="w3cdtf" qualifier="inferred">1920</mods:dateIssued>
                     <mods:dateIssued point="end" encoding="w3cdtf">1979</mods:dateIssued>
                 </mods:originInfo>
                 <mods:note><xsl:text>Date based on the earliest and latest date of the New York Real Estate Brochure Collection.</xsl:text></mods:note>
@@ -148,6 +148,9 @@
                     <mods:recordCreationDate>
                         <xsl:value-of select="current-dateTime()"/>
                     </mods:recordCreationDate>
+                    <mods:languageOfCataloging>
+                        <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
+                    </mods:languageOfCataloging>
                     <mods:recordContentSource authority="marcorg">NNC</mods:recordContentSource>
                     <mods:recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3).</mods:recordOrigin>
                 </mods:recordInfo>
