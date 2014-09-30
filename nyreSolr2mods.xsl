@@ -49,7 +49,7 @@
                         <xsl:value-of 
                             select="arr[@name = 'addresses']/str[1]"
                         />
-                        <xsl:apply-templates select="str[@name = 'project_name'][text()]"/>
+                        <xsl:apply-templates select="str[@name = 'project_name'][text()]" mode="title"/>
                     </mods:title>
                 </mods:titleInfo>
                 <mods:physicalDescription>
@@ -63,6 +63,7 @@
                 <mods:language>
                     <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
                 </mods:language>
+                <xsl:apply-templates select="str[@name = 'project_name'][text()]" mode="subject"/>
                 <xsl:apply-templates
                     select="str[@name = 'state_name'] | str[@name = 'city_name'] | str[@name = 'borough_name']"/>
                 <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
@@ -162,9 +163,14 @@
             </mods:namePart>
         </mods:name>
     </xsl:template>
-    <xsl:template match="doc/str[@name = 'project_name']">
+    <xsl:template match="doc/str[@name = 'project_name']" mode="title">
         <xsl:text>&#160;</xsl:text>
         <xsl:value-of select="."/>
+    </xsl:template>
+    <xsl:template match="doc/str[@name = 'project_name']" mode="subject">
+        <mods:subject authority="local">
+            <xsl:value-of select="."/>
+        </mods:subject>
     </xsl:template>
     <xsl:template match="arr[@name = 'neighborhoods']/str">
         <mods:subject>
