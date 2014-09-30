@@ -73,9 +73,11 @@
                 <mods:subject authority="lcsh">
                     <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
                 </mods:subject>
+                <!--
                 <mods:subject authority="lcsh">
                     <mods:hierarchicalGeographic><mods:country>United States</mods:country></mods:hierarchicalGeographic>
                 </mods:subject>
+                -->
 <!--                <xsl:apply-templates
                     select="str[@name = 'state_name'][contains(text(), 'York')]" mode="ny"/>
                 <xsl:apply-templates
@@ -83,8 +85,7 @@
                 <xsl:apply-templates
                     select="str[@name = 'borough_name'][functx:contains-any-of('.',('Long Island','Westchester'))]"/>
 -->
-<xsl:apply-templates
-    select="str[@name = 'city'][functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="ny"/>
+                <xsl:apply-templates select="str[@name = 'city'][functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="ny"/>
                 <xsl:apply-templates
                     select="str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]"/>
 <!--                <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
@@ -236,7 +237,7 @@
     </xsl:template>
     <xsl:template match="doc/str[@name = 'project_name']" mode="subject">
         <mods:subject authority="local">
-            <xsl:value-of select="."/>
+            <mods:topic><xsl:value-of select="."/></mods:topic>
         </mods:subject>
     </xsl:template>
     <xsl:template match="arr[@name = 'neighborhoods']/str">
