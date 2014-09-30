@@ -119,7 +119,7 @@
                     <xsl:value-of select="$asset_id"/>
                 </mods:identifier>
                
-                <mods:titleInfo type="alternative">
+                <mods:titleInfo>
                     <mods:title><xsl:value-of select="."/></mods:title>
                 </mods:titleInfo>
                 <mods:recordInfo>
