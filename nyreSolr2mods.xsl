@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mods="http://www.loc.gov/mods/v3"
-    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" exclude-result-prefixes="xs xd" version="3.0">
+    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" exclude-result-prefixes="xs xd" version="2.0">
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Sep 23, 2014</xd:p>
@@ -74,7 +74,7 @@
                     <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia University</mods:physicalLocation>
                     <mods:physicalLocation authority="marcorg">NNC-A</mods:physicalLocation>
                     <mods:url access="object in context">
-                        <xsl:text>http://nyre.cul.columbia.edu/items/view/</xsl:text>
+                        <xsl:text>http://nyre.cul.columbia.edu/projects/view/</xsl:text>
                         <xsl:value-of select="str[@name = 'project_id']"/>
                     </mods:url>
                     <mods:holdingSimple>
