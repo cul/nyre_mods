@@ -161,6 +161,9 @@
             <mods:namePart>
                 <xsl:value-of select="."/>
             </mods:namePart>
+            <mods:role>
+                <mods:roleTerm type="text">owner/agent</mods:roleTerm>
+            </mods:role>
         </mods:name>
     </xsl:template>
     <xsl:template match="doc/str[@name = 'project_name']" mode="title">
