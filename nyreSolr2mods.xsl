@@ -86,6 +86,7 @@
                     <mods:holdingSimple>
                         <mods:copyInformation>
                             <mods:subLocation>Avery Classics Collection</mods:subLocation>
+                            <mods:shelfLocator><xsl:value-of select="$item_id"/></mods:shelfLocator>
                         </mods:copyInformation>
                     </mods:holdingSimple>
                 </mods:location>
