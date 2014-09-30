@@ -63,6 +63,7 @@
                 <mods:language>
                     <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
                 </mods:language>
+                <xsl:apply-templates select="str[@name = 'public_notes']"/>
                 <xsl:apply-templates select="str[@name = 'project_name'][text()]" mode="subject"/>
                 <xsl:apply-templates
                     select="str[@name = 'state_name'] | str[@name = 'city_name'] | str[@name = 'borough_name']"/>
@@ -181,6 +182,9 @@
                 <xsl:value-of select="normalize-space(.)"/>
             </mods:geographic>
         </mods:subject>
+    </xsl:template>
+    <xsl:template match="str[@name = 'public_notes']">
+        <mods:note><xsl:value-of select="."/></mods:note>
     </xsl:template>
 
 </xsl:stylesheet>
