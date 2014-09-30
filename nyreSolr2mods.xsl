@@ -92,7 +92,8 @@
                 </mods:location>
                 <mods:relatedItem type="host" displayLabel="Project">
                     <mods:titleInfo>
-                        <mods:title>The New York Real Estate Brochure Collection</mods:title>
+                        <mods:nonSort>The&#xA0;</mods:nonSort>
+                        <mods:title>New York Real Estate Brochure Collection</mods:title>
                     </mods:titleInfo>
                     <mods:location>
                         <mods:url>http://www.columbia.edu/cgi-bin/cul/resolve?clio7363386</mods:url>
