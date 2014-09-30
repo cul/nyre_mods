@@ -69,7 +69,7 @@
                     select="str[@name = 'state_name'] | str[@name = 'city_name'] | str[@name = 'borough_name']"/>
                 <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
                 <mods:subject authority="lcsh">
-                    <mods:topic>Buildings</mods:topic>
+                    <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
                 </mods:subject>
                 <mods:typeOfResource>still image</mods:typeOfResource>
                 <mods:location>
