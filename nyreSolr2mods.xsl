@@ -99,6 +99,13 @@
                         <mods:url>http://www.columbia.edu/cgi-bin/cul/resolve?clio7363386</mods:url>
                     </mods:location>
                 </mods:relatedItem>
+                <mods:relatedItem type="host" displayLabel="Collection">
+                    <mods:titleInfo>
+                        <mods:nonSort>The&#xA0;</mods:nonSort>
+                        <mods:title>New York real estate brochure collection</mods:title>
+                    </mods:titleInfo>
+                    <mods:identifier type="CLIO">CLIO_8595802</mods:identifier>
+                </mods:relatedItem>
                 <mods:recordInfo>
                     <mods:recordIdentifier>
                         <xsl:text>ldpd_</xsl:text>
