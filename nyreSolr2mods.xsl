@@ -53,11 +53,8 @@
                     </mods:title>
                 </mods:titleInfo>
                 <mods:physicalDescription>
-                    <!--                    
-                        <mods:form authority="aat">
-                        <xsl:text>XXXXXXXXXX</xsl:text>
-                    </mods:form>
-                    -->
+                    <mods:form authority="aat" valueURI="http://vocab.getty.edu/aat/300264821">printed ephemera</mods:form>
+                    <mods:form authority="marcform">electronic</mods:form>
                     <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
                 </mods:physicalDescription>
                 <mods:language>
