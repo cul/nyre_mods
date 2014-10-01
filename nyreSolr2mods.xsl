@@ -25,18 +25,6 @@
     <xsl:template match="doc">
         <!-- create list of unique items -->
         <xsl:variable name="item_id" select="str[@name = 'call_number']"/>
-        <xsl:variable name="names_list" select="distinct-values(arr[@name = 'items']/str)"/>
-      <!--  <xsl:message>
-            <xsl:for-each select="$names_list">
-                <xsl:value-of select="$item_id"/>
-                <xsl:text>.</xsl:text>
-                <xsl:value-of select="format-number(position(),'000')"/>
-                <xsl:text>:</xsl:text>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
-            </xsl:for-each>
-        </xsl:message>
-        -->
         <xsl:result-document
             href="data/mods/{$item_id}_mods.xml">
             <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -74,7 +62,7 @@
                 <mods:subject authority="lcsh">
                     <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
                 </mods:subject>
-                <xsl:apply-templates select="arr[@name = 'addresses']/str[. != preceding-sibling::str]" mode="hierarchicalGeo"/>                
+                <xsl:apply-templates select="arr[@name = 'addresses']/str" mode="hierarchicalGeo"/>                
                 <xsl:apply-templates
                     select="str[@name = 'state_name'][text()]" mode="geo"/>                
                 <xsl:apply-templates select="str[@name = 'borough_name'][not(contains('.', 'Outside'))]" mode="geo"/>
