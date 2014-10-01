@@ -93,9 +93,9 @@
                     select="str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="geo"/>
 
                 <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]" mode="geo"/>
-<!--
-                <xsl:apply-templates select="arr[@name = 'addresses']/str"/>
--->
+
+                <xsl:apply-templates select="arr[@name = 'addresses']/str" mode="geo"/>
+
 
                 <mods:typeOfResource>still image</mods:typeOfResource>
                 <mods:location>
@@ -222,6 +222,14 @@
         match="str[@name = 'city'] | str[@name = 'borough_name'] | str[@name = 'state_name'] | arr[@name = 'neighborhoods']/str" mode="geo">
         <mods:subject>
             <mods:geographic><xsl:value-of select="normalize-space(.)"/></mods:geographic>
+        </mods:subject>
+    </xsl:template>
+    <xsl:template
+        match="arr[@name = 'addresses']/str" mode="geo">
+        <mods:subject>
+            <mods:geographic>
+                <xsl:text>Street: #</xsl:text><xsl:value-of select="normalize-space(.)"/>
+            </mods:geographic>
         </mods:subject>
     </xsl:template>
     <xsl:template match="arr[@name = 'architects']/str">
