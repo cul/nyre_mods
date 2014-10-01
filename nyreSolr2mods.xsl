@@ -73,6 +73,7 @@
                 <mods:subject authority="lcsh">
                     <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
                 </mods:subject>
+
                 <!--
                 <mods:subject authority="lcsh">
                     <mods:hierarchicalGeographic><mods:country>United States</mods:country></mods:hierarchicalGeographic>
@@ -85,12 +86,16 @@
                 <xsl:apply-templates
                     select="str[@name = 'borough_name'][functx:contains-any-of('.',('Long Island','Westchester'))]"/>
 -->
+                <xsl:apply-templates select="str[@name = 'borough'][not(contains('.', 'Outside'))]" mode="geo"/>
+
                 <xsl:apply-templates select="str[@name = 'city'][functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="ny"/>
                 <xsl:apply-templates
-                    select="str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]"/>
-<!--                <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
+                    select="str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="geo"/>
+
+                <!--                <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
                 <xsl:apply-templates select="arr[@name = 'addresses']/str"/>
 -->
+
                 <mods:typeOfResource>still image</mods:typeOfResource>
                 <mods:location>
                     <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia University</mods:physicalLocation>
@@ -205,7 +210,7 @@
         </mods:subject>
     </xsl:template>
     <xsl:template
-        match="str[@name = 'city']">
+        match="str[@name = 'city'] | str[@name = 'borough']" mode="geo">
         <mods:subject>
             <mods:geographic><xsl:value-of select="normalize-space(.)"/></mods:geographic>
         </mods:subject>
