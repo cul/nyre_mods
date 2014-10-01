@@ -92,7 +92,8 @@
                 <xsl:apply-templates
                     select="str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="geo"/>
 
-                <!--                <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]"/>
+                <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]" mode="geo"/>
+<!--
                 <xsl:apply-templates select="arr[@name = 'addresses']/str"/>
 -->
 
@@ -218,7 +219,7 @@
         </mods:subject>
     </xsl:template>
     <xsl:template
-        match="str[@name = 'city'] | str[@name = 'borough_name'] | str[@name = 'state_name']" mode="geo">
+        match="str[@name = 'city'] | str[@name = 'borough_name'] | str[@name = 'state_name'] | arr[@name = 'neighborhoods']/str" mode="geo">
         <mods:subject>
             <mods:geographic><xsl:value-of select="normalize-space(.)"/></mods:geographic>
         </mods:subject>
@@ -251,13 +252,6 @@
     <xsl:template match="doc/str[@name = 'project_name']" mode="subject">
         <mods:subject authority="local">
             <mods:topic><xsl:value-of select="."/></mods:topic>
-        </mods:subject>
-    </xsl:template>
-    <xsl:template match="arr[@name = 'neighborhoods']/str">
-        <mods:subject>
-            <mods:geographic>
-                <xsl:value-of select="normalize-space(.)"/>
-            </mods:geographic>
         </mods:subject>
     </xsl:template>
     <xsl:template match="str[@name = 'public_notes']">
