@@ -74,19 +74,14 @@
                 <mods:subject authority="lcsh">
                     <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
                 </mods:subject>
-                <xsl:apply-templates select="arr[@name = 'addresses']/str" mode="hierarchicalGeo"/>
-                
+                <xsl:apply-templates select="arr[@name = 'addresses']/str[. != preceding-sibling::str]" mode="hierarchicalGeo"/>                
                 <xsl:apply-templates
-                    select="str[@name = 'state_name'][text()]" mode="geo"/>
-                
+                    select="str[@name = 'state_name'][text()]" mode="geo"/>                
                 <xsl:apply-templates select="str[@name = 'borough_name'][not(contains('.', 'Outside'))]" mode="geo"/>
-
                 <xsl:apply-templates select="str[@name = 'city'][functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="ny"/>
                 <xsl:apply-templates
                     select="str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="geo"/>
-
                 <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]" mode="geo"/>
-
                 <mods:typeOfResource>still image</mods:typeOfResource>
                 <mods:location>
                     <mods:physicalLocation>Avery Architectural &amp; Fine Arts Library, Columbia University</mods:physicalLocation>
@@ -278,6 +273,7 @@
         <mods:extent><xsl:value-of select="."/><xsl:text> item</xsl:text><xsl:if test=". != '1'"><xsl:text>s</xsl:text></xsl:if></mods:extent>
     </xsl:template>
     <!-- FUNCTIONS -->
+    
     <xsl:function name="functx:contains-any-of" as="xs:boolean">
         <xsl:param name="arg" as="xs:string?"/>
         <xsl:param name="searchStrings" as="xs:string*"/>
