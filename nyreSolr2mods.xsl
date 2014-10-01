@@ -163,8 +163,9 @@
                         <xsl:apply-templates select="ancestor::doc/str[@name = 'city'][functx:contains-any-of(., ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="hierarchicalGeo-ny"/>
                         <xsl:apply-templates
                             select="ancestor::doc/str[@name = 'city'][not(functx:contains-any-of(., ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="hierarchicalGeo"/>
+                        <xsl:apply-templates select="ancestor::doc/str[@name = 'borough_name'][functx:contains-any-of(.,('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="hierarchicalGeo"/>
                         <xsl:apply-templates select="ancestor::doc/arr[@name = 'neighborhoods']/str[text()]" mode="hierarchicalGeo"/>
-                        <mods:citySection><xsl:text>Street: #</xsl:text><xsl:value-of select="normalize-space(.)"/></mods:citySection>
+                        <mods:citySection><xsl:text>Street: </xsl:text><xsl:value-of select="normalize-space(.)"/></mods:citySection>
                     </mods:hierarchicalGeographic>
                 </mods:subject>
     </xsl:template>
@@ -216,7 +217,7 @@
         match="arr[@name = 'addresses']/str" mode="geo">
         <mods:subject>
             <mods:geographic>
-                <xsl:text>Street: #</xsl:text><xsl:value-of select="normalize-space(.)"/>
+                <xsl:text>Street: </xsl:text><xsl:value-of select="normalize-space(.)"/>
             </mods:geographic>
         </mods:subject>
     </xsl:template>
