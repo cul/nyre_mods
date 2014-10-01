@@ -79,14 +79,14 @@
                     <mods:hierarchicalGeographic><mods:country>United States</mods:country></mods:hierarchicalGeographic>
                 </mods:subject>
                 -->
-<!--                <xsl:apply-templates
+                <xsl:apply-templates
                     select="str[@name = 'state_name'][contains(text(), 'York')]" mode="ny"/>
                 <xsl:apply-templates
-                    select="str[@name = 'state_name'][not(contains(text(), 'York'))]"/>
-                <xsl:apply-templates
-                    select="str[@name = 'borough_name'][functx:contains-any-of('.',('Long Island','Westchester'))]"/>
+                    select="str[@name = 'state_name'][not(contains(text(), 'York'))]" mode="geo"/>
+                <!--                
+                <xsl:apply-templates select="str[@name = 'borough_name'][functx:contains-any-of('.',('Long Island','Westchester'))]"/>
 -->
-                <xsl:apply-templates select="str[@name = 'borough'][not(contains('.', 'Outside'))]" mode="geo"/>
+                <xsl:apply-templates select="str[@name = 'borough_name'][not(contains('.', 'Outside'))]" mode="geo"/>
 
                 <xsl:apply-templates select="str[@name = 'city'][functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="ny"/>
                 <xsl:apply-templates
@@ -204,13 +204,21 @@
     </xsl:template>
     -->
     <xsl:template
+        match="str[@name = 'state_name']" mode="ny">
+        <mods:subject>
+            <mods:geographic>
+                <xsl:value-of select="normalize-space(.)"/><xsl:text> (State)</xsl:text>
+            </mods:geographic>
+        </mods:subject>
+    </xsl:template>
+    <xsl:template
         match="str[@name = 'city']" mode="ny">
         <mods:subject>
             <mods:geographic><xsl:text>New York</xsl:text></mods:geographic>
         </mods:subject>
     </xsl:template>
     <xsl:template
-        match="str[@name = 'city'] | str[@name = 'borough']" mode="geo">
+        match="str[@name = 'city'] | str[@name = 'borough_name'] | str[@name = 'state_name']" mode="geo">
         <mods:subject>
             <mods:geographic><xsl:value-of select="normalize-space(.)"/></mods:geographic>
         </mods:subject>
