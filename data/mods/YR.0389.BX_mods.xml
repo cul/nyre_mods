@@ -38,12 +38,22 @@
    <mods:language>
       <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
    </mods:language>
-   <mods:note>Brochure artwork: C.J. Spiess, Yr.0389.01.001-front-folded (the Wingate), .002-all-unfolded (typical floor plan), .003-back-folded (map)</mods:note>
+   <mods:note>Brochure artwork: C.J. Spiess, Yr.0389.01.001-front-folded (the
+    Wingate), .002-all-unfolded (typical floor plan), .003-back-folded (map)</mods:note>
    <mods:subject authority="local">
       <mods:topic>Wingate</mods:topic>
    </mods:subject>
    <mods:subject authority="lcsh">
       <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>Bronx</mods:city>
+         <mods:citySection>Kingsbridge Heights</mods:citySection>
+         <mods:citySection>Street: #2686 Bailey Ave.</mods:citySection>
+      </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
@@ -56,9 +66,6 @@
    </mods:subject>
    <mods:subject>
       <mods:geographic>Kingsbridge Heights</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #2686 Bailey Ave.</mods:geographic>
    </mods:subject>
    <mods:typeOfResource>still image</mods:typeOfResource>
    <mods:location>
@@ -90,7 +97,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0389.BX</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T12:06:58.39-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

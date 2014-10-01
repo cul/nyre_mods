@@ -11,7 +11,9 @@
       </mods:role>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>304 E. 41 St. Tudor City - Prospect Tower, The Manor, The Cloister, The Hermitage, Tudor Tower, Woodstock Tower, Essex House, Windsor Tower, Haddon Hall, Hardwicke Hall, Hatfield House, Hotel Tudor</mods:title>
+      <mods:title>304 E. 41 St. Tudor City - Prospect Tower, The Manor, The Cloister, The Hermitage,
+    Tudor Tower, Woodstock Tower, Essex House, Windsor Tower, Haddon Hall, Hardwicke Hall, Hatfield
+    House, Hotel Tudor</mods:title>
    </mods:titleInfo>
    <mods:physicalDescription>
       <mods:form authority="aat" valueURI="http://vocab.getty.edu/aat/300264821">printed ephemera</mods:form>
@@ -33,10 +35,111 @@
    </mods:language>
    <mods:note/>
    <mods:subject authority="local">
-      <mods:topic>Tudor City - Prospect Tower, The Manor, The Cloister, The Hermitage, Tudor Tower, Woodstock Tower, Essex House, Windsor Tower, Haddon Hall, Hardwicke Hall, Hatfield House, Hotel Tudor</mods:topic>
+      <mods:topic>Tudor City - Prospect Tower, The Manor, The Cloister, The Hermitage,
+    Tudor Tower, Woodstock Tower, Essex House, Windsor Tower, Haddon Hall, Hardwicke Hall, Hatfield
+    House, Hotel Tudor</mods:topic>
    </mods:subject>
    <mods:subject authority="lcsh">
       <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #304 E. 41 St.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #314 E. 41 St.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #324 E. 41 St.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #5 Prospect Pl.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #325 E. 41 St.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #320 E. 42 St.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #25 Prospect Pl.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #330 E. 43 St.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #321 E. 43 St.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #333 E. 43 St.</mods:citySection>
+      </mods:hierarchicalGeographic>
+   </mods:subject>
+   <mods:subject authority="lcsh">
+      <mods:hierarchicalGeographic>
+         <mods:country>United States</mods:country>
+         <mods:state>New York (State)</mods:state>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Turtle Bay - East Midtown</mods:citySection>
+         <mods:citySection>Street: #45 Prospect Pl.</mods:citySection>
+      </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
@@ -49,39 +152,6 @@
    </mods:subject>
    <mods:subject>
       <mods:geographic>Turtle Bay - East Midtown</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #304 E. 41 St.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #314 E. 41 St.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #324 E. 41 St.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #5 Prospect Pl.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #325 E. 41 St.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #320 E. 42 St.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #25 Prospect Pl.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #330 E. 43 St.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #321 E. 43 St.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #333 E. 43 St.</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Street: #45 Prospect Pl.</mods:geographic>
    </mods:subject>
    <mods:typeOfResource>still image</mods:typeOfResource>
    <mods:location>
@@ -113,7 +183,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.4169.MH</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T12:06:58.39-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

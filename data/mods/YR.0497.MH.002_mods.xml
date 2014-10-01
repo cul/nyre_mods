@@ -5,11 +5,12 @@
            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
    <mods:identifier type="local">YR.0497.MH.002</mods:identifier>
    <mods:titleInfo>
-      <mods:title>Plans of 11th and 12th - 14th and 15th - 16th and 17th - 18th - 19th - 20th floors and penthouse</mods:title>
+      <mods:title>Plans of 11th and 12th - 14th and 15th - 16th and 17th - 18th - 19th - 20th floors and
+     penthouse</mods:title>
    </mods:titleInfo>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0497.MH.002</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T12:06:58.39-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>
