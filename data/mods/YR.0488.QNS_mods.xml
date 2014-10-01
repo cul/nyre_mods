@@ -43,18 +43,19 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
-         <mods:citySection>Street: #110-48 72 Ave.</mods:citySection>
+         <mods:citySection>Street: 110-48 72 Ave.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Queens</mods:geographic>
+      <mods:geographic>New York</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>New York</mods:geographic>
+      <mods:geographic>Queens</mods:geographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Forest Hills</mods:geographic>
@@ -89,7 +90,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0488.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

@@ -52,11 +52,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #63-09 108 St.</mods:citySection>
+         <mods:citySection>Street: 63-09 108 St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -64,11 +65,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #108-20 62 Dr.</mods:citySection>
+         <mods:citySection>Street: 108-20 62 Dr.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -76,11 +78,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #62-59 108 St.</mods:citySection>
+         <mods:citySection>Street: 62-59 108 St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -88,11 +91,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #62-10 108 St.</mods:citySection>
+         <mods:citySection>Street: 62-10 108 St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -100,11 +104,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #62-60 108 St.</mods:citySection>
+         <mods:citySection>Street: 62-60 108 St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -112,11 +117,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #105-45 62 Rd.</mods:citySection>
+         <mods:citySection>Street: 105-45 62 Rd.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -124,11 +130,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #105-40 62 Rd.</mods:citySection>
+         <mods:citySection>Street: 105-40 62 Rd.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -136,11 +143,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #105-10 62 Rd.</mods:citySection>
+         <mods:citySection>Street: 105-10 62 Rd.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -148,11 +156,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #104-80 62 Rd.</mods:citySection>
+         <mods:citySection>Street: 104-80 62 Rd.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -160,11 +169,12 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #104-90 62 Rd.</mods:citySection>
+         <mods:citySection>Street: 104-90 62 Rd.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -172,21 +182,22 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Forest Hills</mods:citySection>
          <mods:citySection>Corona</mods:citySection>
          <mods:citySection>Rego Park</mods:citySection>
          <mods:citySection>Oakland Gardens</mods:citySection>
-         <mods:citySection>Street: #102-40 Horace Harding Expy.</mods:citySection>
+         <mods:citySection>Street: 102-40 Horace Harding Expy.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Queens</mods:geographic>
+      <mods:geographic>New York</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>New York</mods:geographic>
+      <mods:geographic>Queens</mods:geographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Forest Hills</mods:geographic>
@@ -230,7 +241,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0845.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

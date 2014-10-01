@@ -49,14 +49,11 @@
          <mods:country>United States</mods:country>
          <mods:state>Illinois</mods:state>
          <mods:city>Chicago</mods:city>
-         <mods:citySection>Street: #120 West Madison St.</mods:citySection>
+         <mods:citySection>Street: 120 West Madison St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Illinois</mods:geographic>
-   </mods:subject>
-   <mods:subject>
-      <mods:geographic>Outside NY State</mods:geographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Chicago</mods:geographic>
@@ -91,7 +88,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0006.ONY</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

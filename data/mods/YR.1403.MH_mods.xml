@@ -40,8 +40,9 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Manhattan</mods:county>
          <mods:citySection>Washington Heights North</mods:citySection>
-         <mods:citySection>Street: #660 Fort Washington Ave.</mods:citySection>
+         <mods:citySection>Street: 660 Fort Washington Ave.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -49,18 +50,19 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Manhattan</mods:county>
          <mods:citySection>Washington Heights North</mods:citySection>
-         <mods:citySection>Street: #640 Fort Washington Ave.</mods:citySection>
+         <mods:citySection>Street: 640 Fort Washington Ave.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Manhattan</mods:geographic>
+      <mods:geographic>New York</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>New York</mods:geographic>
+      <mods:geographic>Manhattan</mods:geographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Washington Heights North</mods:geographic>
@@ -95,7 +97,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.1403.MH</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

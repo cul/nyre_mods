@@ -48,18 +48,19 @@
       <mods:hierarchicalGeographic>
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
+         <mods:county>Long Island</mods:county>
          <mods:city>Hempstead</mods:city>
-         <mods:citySection>Street: #175 Fulton Ave.</mods:citySection>
+         <mods:citySection>Street: 175 Fulton Ave.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Long Island</mods:geographic>
+      <mods:geographic>Hempstead</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Hempstead</mods:geographic>
+      <mods:geographic>Long Island</mods:geographic>
    </mods:subject>
    <mods:typeOfResource>still image</mods:typeOfResource>
    <mods:location>
@@ -91,7 +92,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0176.LI</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

@@ -42,16 +42,17 @@
       <mods:hierarchicalGeographic>
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
-         <mods:city>Staten Island</mods:city>
+         <mods:city>New York</mods:city>
+         <mods:county>Staten Island</mods:county>
          <mods:citySection>Grymes Hill - Clifton - Fox Hills</mods:citySection>
-         <mods:citySection>Street: #Serpentine Rd. and Stratford Rd.</mods:citySection>
+         <mods:citySection>Street: Serpentine Rd. and Stratford Rd.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Staten Island</mods:geographic>
+      <mods:geographic>New York</mods:geographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Staten Island</mods:geographic>
@@ -89,7 +90,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0001.SI</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

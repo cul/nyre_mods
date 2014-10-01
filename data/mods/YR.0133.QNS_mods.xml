@@ -50,8 +50,9 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Elmhurst</mods:citySection>
-         <mods:citySection>Street: #40-45 Hampton St.</mods:citySection>
+         <mods:citySection>Street: 40-45 Hampton St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -59,8 +60,9 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Elmhurst</mods:citySection>
-         <mods:citySection>Street: #40-35 Hampton St.</mods:citySection>
+         <mods:citySection>Street: 40-35 Hampton St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -68,8 +70,9 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Elmhurst</mods:citySection>
-         <mods:citySection>Street: #40-25 Hampton St.</mods:citySection>
+         <mods:citySection>Street: 40-25 Hampton St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -77,18 +80,19 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Elmhurst</mods:citySection>
-         <mods:citySection>Street: #40-15 Hampton St.</mods:citySection>
+         <mods:citySection>Street: 40-15 Hampton St.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Queens</mods:geographic>
+      <mods:geographic>New York</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>New York</mods:geographic>
+      <mods:geographic>Queens</mods:geographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Elmhurst</mods:geographic>
@@ -123,7 +127,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0133.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

@@ -49,16 +49,17 @@
       <mods:hierarchicalGeographic>
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
-         <mods:city>Bronx</mods:city>
+         <mods:city>New York</mods:city>
+         <mods:county>Bronx</mods:county>
          <mods:citySection>Parkchester</mods:citySection>
-         <mods:citySection>Street: #1332 Metropolitan Ave.</mods:citySection>
+         <mods:citySection>Street: 1332 Metropolitan Ave.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Bronx</mods:geographic>
+      <mods:geographic>New York</mods:geographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Bronx</mods:geographic>
@@ -96,7 +97,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0229.BX</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

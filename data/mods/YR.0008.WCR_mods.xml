@@ -46,18 +46,19 @@
       <mods:hierarchicalGeographic>
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
-         <mods:city>Bronxville</mods:city>
-         <mods:citySection>Street: #1 Vincent Rd.</mods:citySection>
+         <mods:county>Westchester / Rockland</mods:county>
+         <mods:city>New York</mods:city>
+         <mods:citySection>Street: 1 Vincent Rd.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Westchester / Rockland</mods:geographic>
+      <mods:geographic>New York</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Bronxville</mods:geographic>
+      <mods:geographic>Westchester / Rockland</mods:geographic>
    </mods:subject>
    <mods:typeOfResource>still image</mods:typeOfResource>
    <mods:location>
@@ -89,7 +90,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0008.WCR</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

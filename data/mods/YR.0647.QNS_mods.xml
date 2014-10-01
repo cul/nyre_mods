@@ -46,8 +46,9 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Jackson Heights</mods:citySection>
-         <mods:citySection>Street: #75 St. and 30th Ave.</mods:citySection>
+         <mods:citySection>Street: 75 St. and 30th Ave.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject authority="lcsh">
@@ -55,18 +56,19 @@
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
          <mods:city>New York</mods:city>
+         <mods:county>Queens</mods:county>
          <mods:citySection>Jackson Heights</mods:citySection>
-         <mods:citySection>Street: #73 St. and 30 Ave.</mods:citySection>
+         <mods:citySection>Street: 73 St. and 30 Ave.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Queens</mods:geographic>
+      <mods:geographic>New York</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>New York</mods:geographic>
+      <mods:geographic>Queens</mods:geographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>Jackson Heights</mods:geographic>
@@ -101,7 +103,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0647.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

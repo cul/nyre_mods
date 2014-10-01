@@ -42,18 +42,19 @@
       <mods:hierarchicalGeographic>
          <mods:country>United States</mods:country>
          <mods:state>New York (State)</mods:state>
+         <mods:county>Westchester / Rockland</mods:county>
          <mods:city>Eastchester</mods:city>
-         <mods:citySection>Street: #Mill Rd. and White Plains Rd.</mods:citySection>
+         <mods:citySection>Street: Mill Rd. and White Plains Rd.</mods:citySection>
       </mods:hierarchicalGeographic>
    </mods:subject>
    <mods:subject>
       <mods:geographic>New York (State)</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Westchester / Rockland</mods:geographic>
+      <mods:geographic>Eastchester</mods:geographic>
    </mods:subject>
    <mods:subject>
-      <mods:geographic>Eastchester</mods:geographic>
+      <mods:geographic>Westchester / Rockland</mods:geographic>
    </mods:subject>
    <mods:typeOfResource>still image</mods:typeOfResource>
    <mods:location>
@@ -85,7 +86,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0004.WCR</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T16:29:53.04-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>
