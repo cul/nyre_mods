@@ -65,10 +65,10 @@
                 <xsl:apply-templates select="arr[@name = 'addresses']/str" mode="hierarchicalGeo"/>                
                 <xsl:apply-templates
                     select="str[@name = 'state_name'][text()]" mode="geo"/>                
-                <xsl:apply-templates select="str[@name = 'borough_name'][not(contains('.', 'Outside'))]" mode="geo"/>
-                <xsl:apply-templates select="str[@name = 'city'][functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="ny"/>
+                <xsl:apply-templates select="str[@name = 'city'][functx:contains-any-of(., ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="ny"/>
                 <xsl:apply-templates
-                    select="str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="geo"/>
+                    select="str[@name = 'city'][not(functx:contains-any-of(., ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="geo"/>
+                <xsl:apply-templates select="str[@name = 'borough_name'][not(contains(., 'Outside'))]" mode="geo"/>
                 <xsl:apply-templates select="arr[@name = 'neighborhoods']/str[text()]" mode="geo"/>
                 <mods:typeOfResource>still image</mods:typeOfResource>
                 <mods:location>
@@ -159,10 +159,10 @@
                     <mods:hierarchicalGeographic>
                         <mods:country>United States</mods:country>
                         <xsl:apply-templates select="ancestor::doc/str[@name = 'state_name']" mode="hierarchicalGeo"/>           
-                        <xsl:apply-templates select="ancestor::doc/str[@name = 'borough_name'][functx:contains-any-of('.',('Long Island','Westchester'))]" mode="hierarchicalGeo"/>
-                        <xsl:apply-templates select="ancestor::doc/str[@name = 'city'][functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="hierarchicalGeo-ny"/>
+                        <xsl:apply-templates select="ancestor::doc/str[@name = 'borough_name'][functx:contains-any-of(.,('Long Island','Westchester'))]" mode="hierarchicalGeo"/>
+                        <xsl:apply-templates select="ancestor::doc/str[@name = 'city'][functx:contains-any-of(., ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten'))]" mode="hierarchicalGeo-ny"/>
                         <xsl:apply-templates
-                            select="ancestor::doc/str[@name = 'city'][not(functx:contains-any-of('.', ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="hierarchicalGeo"/>
+                            select="ancestor::doc/str[@name = 'city'][not(functx:contains-any-of(., ('Bronx', 'Brooklyn', 'Queens', 'Manhattan', 'Staten')))]" mode="hierarchicalGeo"/>
                         <xsl:apply-templates select="ancestor::doc/arr[@name = 'neighborhoods']/str[text()]" mode="hierarchicalGeo"/>
                         <mods:citySection><xsl:text>Street: #</xsl:text><xsl:value-of select="normalize-space(.)"/></mods:citySection>
                     </mods:hierarchicalGeographic>
@@ -207,6 +207,7 @@
     </xsl:template>
     <xsl:template
         match="str[@name = 'city'] | str[@name = 'borough_name'] | arr[@name = 'neighborhoods']/str" mode="geo">
+        <xsl:message><xsl:value-of select="ancestor::doc/str[@name = 'call_number']"/><xsl:text>---</xsl:text><xsl:value-of select="self::str[@name = 'city']"/></xsl:message>
         <mods:subject>
             <mods:geographic><xsl:value-of select="normalize-space(.)"/></mods:geographic>
         </mods:subject>
