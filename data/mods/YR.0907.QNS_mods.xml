@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:mods="http://www.loc.gov/mods/v3"
-           xmlns:functx="http://www.functx.com"
            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
    <mods:identifier type="local">YR.0907.QNS</mods:identifier>
    <mods:name>
@@ -97,7 +96,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0907.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T17:13:58.49-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T17:30:58.142-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>
