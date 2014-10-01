@@ -39,7 +39,19 @@
       <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
    </mods:subject>
    <mods:subject>
+      <mods:geographic>New York (State)</mods:geographic>
+   </mods:subject>
+   <mods:subject>
+      <mods:geographic>Manhattan</mods:geographic>
+   </mods:subject>
+   <mods:subject>
       <mods:geographic>New York</mods:geographic>
+   </mods:subject>
+   <mods:subject>
+      <mods:geographic>Lincoln Square</mods:geographic>
+   </mods:subject>
+   <mods:subject>
+      <mods:geographic>Street: #1 W. 68 St.</mods:geographic>
    </mods:subject>
    <mods:typeOfResource>still image</mods:typeOfResource>
    <mods:location>
@@ -71,7 +83,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.1902.MH</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-09-30T16:14:42.59-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-10-01T12:06:58.39-04:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>
