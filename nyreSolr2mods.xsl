@@ -35,11 +35,16 @@
                 <xsl:apply-templates select="arr[@name = 'architects']/str[text()]"/>
                 <xsl:apply-templates select="arr[@name = 'owneragents']/str[text()]"/>
                 <mods:titleInfo>
+                    
                     <mods:title>
-                        <xsl:value-of 
-                            select="arr[@name = 'addresses']/str[1]"
-                        />
+                        <!-- select project_name if there, if not use first addresses; i.e. construct a sequence of project_name and addresses[1],
+                            if project_name is null, then addresses[1] is used
+                         -->
+                        <xsl:value-of select="(str[@name = 'project_name'][text()], arr[@name = 'addresses']/str[1])[1]"/>
+<!--                <xsl:value-of 
+                            select="arr[@name = 'addresses']/str[1]/>
                         <xsl:apply-templates select="str[@name = 'project_name'][text()]" mode="title"/>
+-->                        
                     </mods:title>
                 </mods:titleInfo>
                 <mods:physicalDescription>

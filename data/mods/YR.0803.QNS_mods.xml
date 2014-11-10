@@ -28,7 +28,7 @@
       </mods:role>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>Beach Channel Dr. and 58 St. J. Philip Nordeck Apartments</mods:title>
+      <mods:title>J. Philip Nordeck Apartments</mods:title>
    </mods:titleInfo>
    <mods:physicalDescription>
       <mods:form authority="aat" valueURI="http://vocab.getty.edu/aat/300264821">printed ephemera</mods:form>
@@ -48,8 +48,7 @@
    <mods:language>
       <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
    </mods:language>
-   <mods:note>Limited-Profit Housing Program of the State of New York; Brochure
-    artwork: C.J. Spiess</mods:note>
+   <mods:note>Limited-Profit Housing Program of the State of New York; Brochure artwork: C.J. Spiess</mods:note>
    <mods:subject authority="local">
       <mods:topic>J. Philip Nordeck Apartments</mods:topic>
    </mods:subject>
@@ -108,7 +107,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0803.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T17:30:58.142-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-11-10T12:53:40.633-05:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

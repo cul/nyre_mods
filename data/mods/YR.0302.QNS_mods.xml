@@ -16,7 +16,7 @@
       </mods:role>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>Horace Harding Blvd. and Springfield Blvd. Alley Park Housing, Oakland Gardens</mods:title>
+      <mods:title>Alley Park Housing, Oakland Gardens</mods:title>
    </mods:titleInfo>
    <mods:physicalDescription>
       <mods:form authority="aat" valueURI="http://vocab.getty.edu/aat/300264821">printed ephemera</mods:form>
@@ -36,8 +36,7 @@
    <mods:language>
       <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
    </mods:language>
-   <mods:note>Name of property varies by piece; Brochure artwork: J. Floyd Yewell,
-    Benjamin Brewster, dated 1943.</mods:note>
+   <mods:note>Name of property varies by piece; Brochure artwork: J. Floyd Yewell, Benjamin Brewster, dated 1943.</mods:note>
    <mods:subject authority="local">
       <mods:topic>Alley Park Housing, Oakland Gardens</mods:topic>
    </mods:subject>
@@ -96,7 +95,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0302.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T17:30:58.142-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-11-10T12:53:40.633-05:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

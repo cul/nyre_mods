@@ -18,7 +18,7 @@
       </mods:role>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>140-65 Beech Ave. Westgate, Eastgate</mods:title>
+      <mods:title>Westgate, Eastgate</mods:title>
    </mods:titleInfo>
    <mods:physicalDescription>
       <mods:form authority="aat" valueURI="http://vocab.getty.edu/aat/300264821">printed ephemera</mods:form>
@@ -107,7 +107,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0031.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T17:30:58.142-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-11-10T12:53:40.633-05:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

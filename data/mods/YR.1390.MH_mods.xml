@@ -4,7 +4,7 @@
            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
    <mods:identifier type="local">YR.1390.MH</mods:identifier>
    <mods:name>
-      <mods:namePart>Edwin E. Tanzer, Inc.</mods:namePart>
+      <mods:namePart>Edwin E. Tanzer,  Inc.</mods:namePart>
       <mods:role>
          <mods:roleTerm type="text">owner/agent</mods:roleTerm>
       </mods:role>
@@ -86,7 +86,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.1390.MH</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T17:30:58.142-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-11-10T12:53:40.633-05:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

@@ -4,12 +4,11 @@
            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
    <mods:identifier type="local">YR.0090.LI.001</mods:identifier>
    <mods:titleInfo>
-      <mods:title>Apartments A40, A42, B10, B12, C55 and C59 as shown, apartments A39, A41, B9, B13, C56 and
-     C58 reversed</mods:title>
+      <mods:title>Apartments A40, A42, B10, B12, C55 and C59 as shown, apartments A39, A41, B9, B13, C56 and C58 reversed</mods:title>
    </mods:titleInfo>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0090.LI.001</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T17:30:58.142-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-11-10T12:53:40.633-05:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>

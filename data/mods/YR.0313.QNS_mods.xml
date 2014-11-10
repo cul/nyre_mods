@@ -10,8 +10,7 @@
       </mods:role>
    </mods:name>
    <mods:titleInfo>
-      <mods:title>Union Tpk. and 212 St. Country Gardens Estates - The Hampstead, The Westchester, The Sherwood,
-    The Vermont, The Connecticut, The Queens, The Cape Cod</mods:title>
+      <mods:title>Country Gardens Estates - The Hampstead, The Westchester, The Sherwood, The Vermont, The Connecticut, The Queens, The Cape Cod</mods:title>
    </mods:titleInfo>
    <mods:physicalDescription>
       <mods:form authority="aat" valueURI="http://vocab.getty.edu/aat/300264821">printed ephemera</mods:form>
@@ -33,8 +32,7 @@
    </mods:language>
    <mods:note>Brochure artwork: G.L.Scheffler, dated 1941.</mods:note>
    <mods:subject authority="local">
-      <mods:topic>Country Gardens Estates - The Hampstead, The Westchester, The Sherwood,
-    The Vermont, The Connecticut, The Queens, The Cape Cod</mods:topic>
+      <mods:topic>Country Gardens Estates - The Hampstead, The Westchester, The Sherwood, The Vermont, The Connecticut, The Queens, The Cape Cod</mods:topic>
    </mods:subject>
    <mods:subject authority="lcsh">
       <mods:topic valueURI="http://id.loc.gov/authorities/subjects/sh85017769">Buildings</mods:topic>
@@ -91,7 +89,7 @@
    </mods:relatedItem>
    <mods:recordInfo>
       <mods:recordIdentifier>ldpd_YR.0313.QNS</mods:recordIdentifier>
-      <mods:recordCreationDate>2014-10-01T17:30:58.142-04:00</mods:recordCreationDate>
+      <mods:recordCreationDate>2014-11-10T12:53:40.633-05:00</mods:recordCreationDate>
       <mods:languageOfCataloging>
          <mods:languageTerm authority="iso639-2b">eng</mods:languageTerm>
       </mods:languageOfCataloging>
